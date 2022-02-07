@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.categories.FragmentDialog" >
+
+    <TextView
+        android:id="@+id/tekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brisanjem se brišu\n sve aktivnosti!\n\nJeste li sigurni\n da želite\n izbrisati kategoriju?"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:background="@color/background"/>
+
+    <Button
+        android:id="@+id/btnDA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DA"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tekst"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnNE"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnNE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NE"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tekst"
+        app:layout_constraintStart_toEndOf="@id/btnDA"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_pocetna"
+        android:title="@string/menu_pocetna"
+        android:icon="@drawable/ic_menu_home"/>
+    <item
+        android:id="@+id/bottom_kategorije"
+        android:title="@string/menu_kategorije"
+        android:icon="@drawable/ic_menu_categories"/>
+    <item
+        android:id="@+id/bottom_profil"
+        android:title="@string/menu_profil"
+        android:icon="@drawable/ic_menu_profile"/>
+
+</menu>

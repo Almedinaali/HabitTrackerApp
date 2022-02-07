@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@color/design_default_color_surface">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity">
+
+        <!-- Toolbar: pravim custom toolbar jer nad onim defaultnim nemam potpunu kontrolu
+        tj, defaultni toolbar bi ostao vidljiv preko navigation drawera i kad je navdrawer izvucen.
+        Na ovaj nacin ce traka toolbara biti ispod nav drawera kad je on izvucen
+         (u styles.xml sam umjesto Theme.AppCompat.Light.DarkActionBar dodala NoActionBar)-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:minHeight="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextColor="@android:color/white"
+                android:background="?attr/colorPrimary">
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Navigation Drawer -->
+        <!-- dodajem stil navigation viewu pomocu atributa style=".." a stil se nalazi
+        unutar styles.xml fajla -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            style="@style/Widget.Custom.NavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:clipToPadding="false"
+            app:menu="@menu/main_menu" /> <!--main_menu zapravo prikazuje iteme nav drawera
+                                                u njemu se nalaze title i ikona svakog itema -->
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:elevation="4dp"
+            android:background="@color/colorPrimary"
+            app:itemBackground="@color/colorPrimaryDark"
+            app:itemTextColor="@color/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Habit Tracker</string>
+    <string name="menu_pocetna">Home</string>
+    <string name="menu_postignuca">Achievements</string>
+    <string name="menu_napomene">Notes</string>
+    <string name="menu_postavke">Settings</string>
+    <string name="menu_podijeli">Share</string>
+    <string name="menu_kategorije">Categories</string>
+    <string name="menu_profil">Profile</string>
+    <string name="dodaj">Add</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="naziv_aktivnosti">Title</string>
+    <string name="action_bar_pocetna_stranica">Home</string>
+    <string name="action_bar_kategorije">Categories</string>
+    <string name="action_bar_profil">Profile</string>
+    <string name="action_bar_postavke">Settings</string>
+    <string name="action_bar_postignuca">Achievements</string>
+    <string name="action_bar_napomene">Notes</string>
+    <string name="action_bar_podijeli">Share</string>
+
+    <string name="button_izbrisi">DELETE</string>
+    <string name="button_sacuvaj">SAVE</string>
+    <string name="button_napusti">LEAVE</string>
+    <string name="unos_podataka">You have to enter date</string>
+    <string name="DA">YES</string>
+    <string name="NE">NO</string>
+    <string name="unesite_naziv_kategorije">Provide categorie name!</string>
+    <string name="odaberite_tip">Choose type!</string>
+    <string name="dodana_nova">NEW ADDED!</string>
+    <string name="button_dodaj">ADD</string>
+    <string name="alert_dialog">All activities are gonna\n be deleted!\n\nAre you sure\n you wanna\n proceed?"</string>
+
+    <string name="broj">Number</string>
+    <string name="kolicina">Amount</string>
+    <string name="inkrement">Increment</string>
+    <string name="mjernaJedinica">Measuring Unit</string>
+    <string name="pocetak">Start</string>
+    <string name="kraj">End</string>
+
+    <string name="dodaj_novu_kat" >ADD NEW CATEGORY</string>
+    <string name="naziv">Name</string>
+    <string name="osobina">Feature</string>
+    <string name="tip">Type</string>
+
+    <string name="ime">First Name</string>
+    <string name="prezime">Last Name</string>
+    <string name="oKorisniku">About You</string>
+    <string name="citat">Quote Of The Day</string>
+</resources>

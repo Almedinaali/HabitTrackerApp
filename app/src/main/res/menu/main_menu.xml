@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pocetna"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_pocetna"
+            android:checked="true" /> <!-- defaultna pocetna stranica -->
+        <item
+            android:id="@+id/nav_postignuca"
+            android:icon="@drawable/ic_menu_achievements"
+            android:title="@string/menu_postignuca" />
+        <item
+            android:id="@+id/nav_napomene"
+            android:icon="@drawable/ic_menu_notes"
+            android:title="@string/menu_napomene" />
+        <item
+            android:id="@+id/nav_postavke"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/menu_postavke" />
+
+        <item
+            android:id="@+id/nav_podijeli"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/menu_podijeli" />
+    </group>
+
+</menu>

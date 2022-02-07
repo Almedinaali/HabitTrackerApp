@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorNavigationItem">@color/menu_item_color</item>
+        <item name="navigationItemBackground">@drawable/menu_background_color</item>
+        <item name="colorNavigationItemSelected">@color/colorWhite</item>
+    </style>
+
+    <style name="Widget.Custom.NavigationView" parent="Widget.Design.NavigationView">
+        <item name="itemIconTint">?attr/colorNavigationItem</item>
+        <item name="itemTextColor">?attr/colorNavigationItem</item>
+        <item name="itemBackground">?attr/navigationItemBackground</item>
+    </style>
+
+    <style name="HabitButton" parent="android:Widget.Button">
+        <item name="android:radius">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+</resources>
